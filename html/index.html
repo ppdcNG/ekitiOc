@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="../dist/components/card.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/semantic.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
@@ -27,7 +28,11 @@
   <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/input.css">
   <link rel="stylesheet" type="text/css" href="../dist/components/semantic.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/label.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/step.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
   <style type="text/css">
     .hidden.menu {
@@ -140,6 +145,8 @@
   <script src="../dist/components/visibility.js"></script>
   <script src="../dist/components/sidebar.js"></script>
   <script src="../dist/components/transition.js"></script>
+  <script src="../dist/components/form.js"></script>
+  <script src="../dist/components/dropdown.js"></script>
   <script>
     $(document)
       .ready(function () {
@@ -161,8 +168,18 @@
         $('.ui.sidebar')
           .sidebar('attach events', '.toc.item')
           ;
+        $('.ui.dropdown')
+          .dropdown()
+          ;
 
       })
+
+
+      ;
+  </script>
+  <script>
+    $('.ui.dropdown')
+      .dropdown()
       ;
   </script>
 </head>
@@ -173,9 +190,9 @@
   <div class="ui large top fixed hidden menu">
     <div class="ui container">
       <a class="active item">Home</a>
-      <a class="item">Work</a>
-      <a class="item">Company</a>
-      <a class="item">Careers</a>
+      <a class="item">Projects</a>
+      <a class="item">Table</a>
+      <a class="item">Visualization</a>
       <div class="right menu">
         <div class="item">
           <a class="ui button">Log in</a>
@@ -190,9 +207,9 @@
   <!-- Sidebar Menu -->
   <div class="ui vertical inverted sidebar menu">
     <a class="active item">Home</a>
-    <a class="item">Work</a>
-    <a class="item">Company</a>
-    <a class="item">Careers</a>
+    <a class="item">Projects</a>
+    <a class="item">Table</a>
+    <a class="item">Visualization</a>
     <a class="item">Login</a>
     <a class="item">Signup</a>
   </div>
@@ -208,9 +225,9 @@
             <i class="sidebar icon"></i>
           </a>
           <a class="active item">Home</a>
-          <a class="item">Work</a>
-          <a class="item">Company</a>
-          <a class="item">Careers</a>
+          <a class="item">Projects</a>
+          <a class="item">Table</a>
+          <a class="item">Visualization</a>
           <div class="right item">
             <a class="ui inverted button">Log in</a>
             <a class="ui inverted button">Sign Up</a>
@@ -227,136 +244,62 @@
       </div>
 
     </div>
-
-    <div class="ui vertical stripe segment">
-      <div class="ui middle aligned stackable grid container">
-        <div class="row">
-          <div class="eight wide column">
-
-            <h3 class="ui header">Track, Monitor and Provide Feedback on Projects in your Community</h3>
-            <p>Track the progress of projects within your community and provide feedback on service delivery.</p>
-          </div>
-          <div class="six wide right floated column">
-            <img src="../images/Mile-12-in-Pictures-5-600x400.jpg" class="ui large bordered rounded image">
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="inverted">
-      <div class="ui container vertical stripe segment grid">
-        <div class="row">
-          <div class="center aligned column">
-            <p class="ui huge">Check Out the Latest Updates</p>
-          </div>
-        </div>
-        <div class="ui three stackable special cards row">
-          <div class="ui link card">
-            <div class="content">
-              <div class="right floated meta"><a class="ui red right ribbon label">20% Completed</a></div>
-              2015
-            </div>
-
-            <div class="image">
-              <img src="../images/Roads.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Construction of Olokoro-Isiala-Oboro-Nnono
-                Junction Road in Abia State C/No. 6091 </div>
-              <div class="meta">
-                <a>Ado-Ekiti</a>
+    <div class="ui vertical stripe">
+        
+          <div class="ui middle aligned stackable grid container">
+            <div class="row">
+              <div class="six wide left floated column">
+                <img src="../images/bayo.jpg" class="ui large bordered rounded image">
               </div>
-              <div class="description">
-                <span class="right floated">&#8358; 1,000,000</span>
-                <span class="left floated">
-                  Cntract Amount
-                </span>
+              <div class="eight wide column">
+                <h3 class="ui header">Access to contracting data accross all stages of procurement</h3>
+                <p> Here we give you access to data such as needs assessments, procurement plans, market studies, Tender
+                  Notices, Specifications, Details of Award, Details of Bid Evaluation, Signed Contracts, Ammendments,
+                  payments progress updates and Completion and Termination Info. You can also download datasets, export
+                  vizualisations and view site images</p>
+  
               </div>
-              <div class="description">
-                <span class="right floated">02/02/2020</span>
-                <span class="left floated">
-                  Expected End date
-                </span>
+  
+            </div>
+  
+          </div>
+        
+        <div class="">
+          <div class="ui equal width stackable internally  grid container">
+            <div class="row">
+              <div class="center aligned column">
+                <p class="ui huge">Summary of this Portal</p>
               </div>
             </div>
-          </div>
-          <div class="ui link card">
-            <div class="content">
-              <div class="right floated meta"><a class="ui orange right ribbon label">50% Completed</a></div>
-              2018
-            </div>
-            <div class="image">
-              <img src="../images/woodside-photography-2018---on-site-274-image-by-jarrad-seng.tmb-1700x768.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Rehabilitation and Reconstruction of EnuguPort Harcourt Dual Carriageway Section I:
-                Lokpanta-Umuahia Tower (CH. 61+000-CH.
-                120+500) in Abia State. C/No. 6208 </div>
-              <div class="meta">
-                <a>Ado-Ekiti</a>
+            <div class="aligned row">
+              <div class="column">
+  
+                <div class="ui vertical  steps" style="width: 100%">
+                  <div class="completed step">
+                    <i class="archive icon"></i>
+                    <div class="content">
+                      <div class="title">Number of Awarded Contracts</div>
+                      <div class="description">100,000</div>
+                    </div>
+                  </div>
+                  <div class="active step">
+                    <i class="archive icon"></i>
+                    <div class="content">
+                      <div class="title">Total Number of projects</div>
+                      <div class="description">Enter billing information</div>
+                    </div>
+                  </div>
+                  <div class="complete step">
+                    <i class="money icon"></i>
+                    <div class="content">
+                      <div class="title">Total Contract Amount</div>
+                      <div class="description"><span class="right floated">&#8358; 1,000,000</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="description">
-                <span class="right floated">&#8358; 1,000,000</span>
-                <span class="left floated">
-                  Contract Amount
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="ui link card">
-            <div class="content">
-              <div class="right floated meta"><a class="ui blue right ribbon label">80% Completed</a></div>
-              2017
-            </div>
-            <div class="image">
-              <img src="../images/Construction-Site-Security.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Emergency Repairs of Existing Niger Bridge
-                at Onitsha/Asaba in Anambra/Delta States
-                C/No 6206</div>
-              <div class="meta">
-                <a>Ado-Ekiti</a>
-              </div>
-              <div class="description">
-                <span class="right floated">&#8358; 1,000,000</span>
-                <span class="left floated">
-                  Contract Amount
-                </span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="ui vertical  segment">
-      <div class="ui middle aligned stackable grid container">
-        <div class="row">
-          <div class="six wide left floated column">
-            <img src="../images/bayo.jpg" class="ui large bordered rounded image">
-          </div>
-          <div class="eight wide column">
-            <h3 class="ui header">Access to contracting data accross all stages of procurement</h3>
-            <p> Here we give you access to data such as needs assessments, procurement plans, market studies, Tender
-              Notices, Specifications, Details of Award, Details of Bid Evaluation, Signed Contracts, Ammendments,
-              payments progress updates and Completion and Termination Info. You can also download datasets, export
-              vizualisations and view site images</p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-    <div class="ui vertical stripe quote segment">
-      <div class="ui equal width stackable internally celled grid">
-        <div class="center aligned row">
-          <div class="column">
-              <div class="ui form">
+              <div class="column">
+                <div class="ui form">
                   <div class="field">
                     <label>Select Location</label>
                     <select multiple="" class="ui dropdown">
@@ -375,52 +318,164 @@
                     </select>
                   </div>
                   <div class="field">
-                      <label>Select Location</label>
-                      <select multiple="" class="ui dropdown">
-                        <option value="">Select Country</option>
-                        <option value="AF">Afghanistan</option>
-                        <option value="AX">Åland Islands</option>
-                        <option value="AL">Albania</option>
-                        <option value="DZ">Algeria</option>
-                        <option value="AS">American Samoa</option>
-                        <option value="AD">Andorra</option>
-                        <option value="AO">Angola</option>
-                        <option value="AI">Anguilla</option>
-                        <option value="AQ">Antarctica</option>
-                        <option value="AG">Antigua and Barbuda</option>
-                        <option value="ZW">Zimbabwe</option>
-                      </select>
-                    </div>
+                    <label>Select Year</label>
+                    <select multiple="" class="ui dropdown">
+                      <option value="">Select Country</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AX">Åland Islands</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua and Barbuda</option>
+                      <option value="ZW">Zimbabwe</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>MDA</label>
+                    <select multiple="" class="ui dropdown">
+                      <option value="">Select Country</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AX">Åland Islands</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua and Barbuda</option>
+                      <option value="ZW">Zimbabwe</option>
+                    </select>
+                  </div>
                 </div>
-          </div>
-          <div class="column">
-            <h3>"I shouldn't have gone with their competitor."</h3>
-            <p>
-              <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+              </div>
+  
+            </div>
+            <div class="row">
+              <div class="center aligned column">
+                <div class="ui primary button">View Filtered Projects <i class="right arrow icon"></i></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- <div class="ui vertical stripe segment">
-      <div class="ui text container">
-        <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-        <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing
-          nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and
-          worth your attention.</p>
-        <a class="ui large button">Read More</a>
-        <h4 class="ui horizontal header divider">
-          <a href="#">Case Studies</a>
-        </h4>
-        <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-        <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true.
-          It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-        <a class="ui large button">I'm Still Quite Interested</a>
-      </div>
-    </div>
- -->
 
+    <div class="">
+      
+        <div class="ui middle aligned stackable grid container">
+          <div class="row">
+            <div class="eight wide column">
+
+              <h3 class="ui header">Track, Monitor and Provide Feedback on Projects in your Community</h3>
+              <p>Track the progress of projects within your community and provide feedback on service delivery.</p>
+            </div>
+            <div class="six wide right floated column">
+              <img src="../images/Mile-12-in-Pictures-5-600x400.jpg" class="ui large bordered rounded image">
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="ui container  vertical stripe grid">
+          <div class="row">
+            <div class="center aligned column">
+              <p class="ui huge">Check Out the Latest Updates</p>
+            </div>
+          </div>
+          <div class="ui three stackable special cards row">
+            <div class="ui link card">
+              <div class="content">
+                <div class="right floated meta"><a class="ui red right ribbon label">20% Completed</a></div>
+                2015
+              </div>
+
+              <div class="image">
+                <img src="../images/Roads.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Construction of Olokoro-Isiala-Oboro-Nnono
+                  Junction Road in Abia State C/No. 6091 </div>
+                <div class="meta">
+                  <a>Ado-Ekiti</a>
+                </div>
+                <div class="description">
+                  <span class="right floated">&#8358; 1,000,000</span>
+                  <span class="left floated">
+                    Cntract Amount
+                  </span>
+                </div>
+                <div class="description">
+                  <span class="right floated">02/02/2020</span>
+                  <span class="left floated">
+                    Expected End date
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="ui link card">
+              <div class="content">
+                <div class="right floated meta"><a class="ui orange right ribbon label">50% Completed</a></div>
+                2018
+              </div>
+              <div class="image">
+                <img src="../images/woodside-photography-2018---on-site-274-image-by-jarrad-seng.tmb-1700x768.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Rehabilitation and Reconstruction of EnuguPort Harcourt Dual Carriageway Section I:
+                  Lokpanta-Umuahia Tower (CH. 61+000-CH.
+                  120+500) in Abia State. C/No. 6208 </div>
+                <div class="meta">
+                  <a>Ado-Ekiti</a>
+                </div>
+                <div class="description">
+                  <span class="right floated">&#8358; 1,000,000</span>
+                  <span class="left floated">
+                    Contract Amount
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="ui link card">
+              <div class="content">
+                <div class="right floated meta"><a class="ui blue right ribbon label">80% Completed</a></div>
+                2017
+              </div>
+              <div class="image">
+                <img src="../images/Construction-Site-Security.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Emergency Repairs of Existing Niger Bridge
+                  at Onitsha/Asaba in Anambra/Delta States
+                  C/No 6206</div>
+                <div class="meta">
+                  <a>Ado-Ekiti</a>
+                </div>
+                <div class="description">
+                  <span class="right floated">&#8358; 1,000,000</span>
+                  <span class="left floated">
+                    Contract Amount
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="center aligned column">
+              <div class="ui primary button">View All <i class="right arrow icon"></i></div>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+    
+  
     <div class="ui inverted vertical footer segment">
 
       <div class="ui container">
