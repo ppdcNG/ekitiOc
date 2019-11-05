@@ -138,8 +138,19 @@
       background: url("../images/bayo.jpg") center center !important;
     }
     .footer,
-    .er {
+    .footer * {
+      color: #b82f2e !important;
+      background-color: #fef785 !important;
+    }
+    .nav-bg {
       background-color: #b82f2e !important;
+      color: #fff !important;
+    }
+    .red-bg {
+      background-color: #fef785 !important;
+    }
+    .red-text {
+      color: #b82f2e !important;
     }
   </style>
 
@@ -189,19 +200,16 @@
 <body>
 
   <!-- Following Menu -->
-  <div class="ui large top fixed hidden menu">
+  <div class="ui large top fixed hidden menu red-bg">
     <div class="ui container">
-      <a class="active item">Home</a>
-      <a class="item">Projects</a>
-      <a class="item">Monitored Projects</a>
+      <a class="active item" href="./index.html">Home</a>
+      <a class="item" href="./projects.html">Projects</a>
+      <a class="item" href="./monitored-projects.html">Monitored Projects</a>
       <a class="item">Table</a>
       <a class="item">Visualization</a>
       <div class="right menu">
         <div class="item">
-          <a class="ui inverted yellow button">Log in</a>
-        </div>
-        <div class="item">
-          <a class="ui yellow button">Sign Up</a>
+          <a class="ui inverted red button">Log in</a>
         </div>
       </div>
     </div>
@@ -209,9 +217,9 @@
 
   <!-- Sidebar Menu -->
   <div class="ui vertical inverted sidebar menu">
-    <a class="active item">Home</a>
-    <a class="item">Projects</a>
-    <a class="item">Monitored Projects</a>
+    <a class="active item" href="./index.html">Home</a>
+    <a class="item" href="./projects.html">Projects</a>
+    <a class="item" href="./monitored-projects.html">Monitored Projects</a>
     <a class="item">Table</a>
     
     <a class="item">Visualization</a>
@@ -229,9 +237,9 @@
           <a class="toc item">
             <i class="sidebar icon"></i>
           </a>
-          <a class="active item">Home</a>
-          <a class="item">Projects</a>
-          <a class="item">Monitored Projects</a>
+          <a class="active item" href="./index.html">Home</a>
+          <a class="item" href="./projects.html">Projects</a>
+          <a class="item" href="./monitored-projects.html">Monitored Projects</a>
           <a class="item">Table</a>
           <a class="item">Visualization</a>
           <div class="right item">
@@ -242,7 +250,7 @@
       </div>
 
       <div class="ui text container" style="background-color: rgba(0,0,0,0.8);">
-        <img src="../images/circle-cropped.png" width="200" alt="ekiti_state_logo">
+        <img src="../images/ekiti-logo-294x300.gif" width="200" alt="ekiti_state_logo">
         <h1 class="ui inverted header">
           Ekiti State Open Contracting Portal
         </h1>
@@ -364,7 +372,7 @@
             </div>
             <div class="row">
               <div class="center aligned column">
-                <div class="ui primary button">View Filtered Projects <i class="right arrow icon"></i></div>
+                <div class="ui red button">View Filtered Projects <i class="right arrow icon"></i></div>
               </div>
             </div>
           </div>
@@ -472,7 +480,7 @@
           </div>
           <div class="row">
             <div class="center aligned column">
-              <div class="ui primary button">View All <i class="right arrow icon"></i></div>
+              <div class="ui red button">View All <i class="right arrow icon"></i></div>
             </div>
           </div>
         </div>
