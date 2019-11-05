@@ -141,8 +141,13 @@
         }
 
         .footer,
-        .er {
-            background-color: #b82f2e !important;
+        .footer * {
+            color: #b82f2e !important;
+            background-color: #fef785 !important;
+        }
+        .nav-bg {
+            background-color: #fef785 !important;
+            color: #fff !important;
         }
     </style>
 
@@ -194,17 +199,17 @@
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
         <div class="ui container">
-            <a class=" item">Home</a>
+            <a class=" item" href="./index.html">Home</a>
             <a class="active item">Projects</a>
-            <a class="item">Monitored Projects</a>
+            <a class="item" href="./monitored-projects.html">Monitored Projects</a>
             <a class="item">Table</a>
             <a class="item">Visualization</a>
             <div class="right menu">
                 <div class="item">
-                    <a class="ui button">Log in</a>
+                    <a class="ui inverted red button">Log in</a>
                 </div>
                 <div class="item">
-                    <a class="ui primary button">Sign Up</a>
+                    <a class="ui red button">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -224,21 +229,21 @@
 
     <!-- Page Contents -->
     <div class="pusher">
-        <div class="ui inverted vertical center aligned segment">
+        <div class="ui inverted vertical center aligned segment nav-bg">
 
             <div class="ui container">
-                <div class="ui large secondary inverted pointing menu">
+                <div class="ui large secondary pointing menu ">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
-                    <a class=" item">Home</a>
+                    <a class=" item" href="./index.html">Home</a>
                     <a class="active item">Projects</a>
-                    <a class="item">Monitored Projects</a>
+                    <a class="item" href="./monitored-projects.html">Monitored Projects</a>
                     <a class="item">Table</a>
                     <a class="item">Visualization</a>
                     <div class="right item">
-                        <a class="ui inverted button">Log in</a>
-                        <a class="ui inverted button">Sign Up</a>
+                        <a class="ui inverted red button">Log in</a>
+                        <a class="ui inverted red button">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -345,7 +350,7 @@
             <div class="grid">
                 <div class="row">
                     <div class="center aligned column">
-                        <div class="ui primary button">Fetch Projects <i class="down arrow icon"></i></div>
+                        <div class="ui red button">Fetch Projects <i class="down arrow icon"></i></div>
                     </div>
                 </div>
             </div>
@@ -504,7 +509,7 @@
                 </div>
                 <div class="row">
                     <div class="center aligned column">
-                        <div class="ui primary button">View More <i class="down arrow icon"></i></div>
+                        <div class="ui red button">View More <i class="down arrow icon"></i></div>
                     </div>
                 </div>
             </div>
